@@ -1,0 +1,40 @@
+.board {
+    padding: 20px;
+  }
+  
+  .add-list-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .lists {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .list {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cards {
+    margin-top: 10px;
+  }
+  
+  .card {
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  

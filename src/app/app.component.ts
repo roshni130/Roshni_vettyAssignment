@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { JiraBoardComponent } from './jira-board/jira-board.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [JiraBoardComponent],
+  template: `<app-jira-board></app-jira-board>`,
 })
-export class AppComponent {
-  title = 'jira-board';
-}
+export class AppComponent {}

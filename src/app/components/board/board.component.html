@@ -1,0 +1,7 @@
+<div>
+    <button (click)="addList()">ADD LIST</button>
+    <div style="display: flex; gap: 10px;">
+      <app-list *ngFor="let list of lists" [list]="list" (deleteListEvent)="deleteList(list.id)"></app-list>
+    </div>
+  </div>
+  

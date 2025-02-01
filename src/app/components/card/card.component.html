@@ -1,0 +1,6 @@
+<div style="border: 1px solid gray; margin: 5px; padding: 5px;">
+    <h4>{{ card.title }} <button (click)="deleteCard()">X</button></h4>
+    <p>{{ card.description }}</p>
+    <small>{{ card.createdAt | date:'short' }}</small>
+  </div>
+  

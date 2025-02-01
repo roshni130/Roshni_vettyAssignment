@@ -1,0 +1,21 @@
+<div class="board">
+    <button class="add-list-btn" (click)="addList()">ADD LIST</button>
+    <div class="lists">
+      <div *ngFor="let list of lists; let listIndex = index" class="list">
+        <div class="list-header">
+          <input [(ngModel)]="list.title" placeholder="Enter List Name" />
+          <button (click)="deleteList(listIndex)">X</button>
+        </div>
+        <div class="cards">
+          <div *ngFor="let card of list.cards; let cardIndex = index" class="card">
+            <strong>{{ card.title }}</strong>
+            <p>{{ card.description }}</p>
+            <small>{{ card.timestamp }}</small>
+            <button (click)="deleteCard(listIndex, cardIndex)">X</button>
+          </div>
+        </div>
+        <button class="add-card-btn" (click)="addCard(listIndex)">+</button>
+      </div>
+    </div>
+  </div>
+  
